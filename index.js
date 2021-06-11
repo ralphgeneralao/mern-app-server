@@ -21,10 +21,6 @@ app.use(cors())
 
 app.use('/posts', postRoutes)
 
-app.get('/', (req,res) => {
-  res.send('Hello to MERN API')
-})
-
 const PORT = process.env.PORT || 5003
 
 mongoose.connect(process.env.CONNECTION_URL, {
